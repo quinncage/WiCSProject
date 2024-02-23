@@ -5,7 +5,7 @@
 1. Set up VSCode
     1. follow instructions 
         
-        [](https://code.visualstudio.com/docs/setup/windows)
+        [Download VSCode](https://code.visualstudio.com/docs/setup/windows)
         
 2. Install Python
     1. open your terminal
@@ -40,7 +40,7 @@
         ```powershell
         python SpeechToText.py
         ```
-        
+
         and the following on a mac
         
         ```bash
