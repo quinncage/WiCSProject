@@ -24,6 +24,7 @@
         ```powershell
         winget install Python.Python.3.12
         ```
+        close and reopen your terminal and run the python -V command to make sure python installed properly
         
 3. Download Open AI Speech to text
     1. [Download Whisper](https://github.com/openai/whisper) scroll down and follow the set up instructions
