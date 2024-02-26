@@ -48,3 +48,30 @@
         ```
     
     2. the transcription should appear in the terminal of vscode
+  
+# Meeting 2 on Zoom (2/26/24)
+## To install python on a mac you need to do the following
+
+### Step 0: Uninstalling your existing python installation from the website
+
+(you can copy paste all commands below and run them at once no need to run them one by one)
+
+```bash
+python_version_number=3.12
+sudo rm -rf /Library/Frameworks/Python.framework/Versions/${python_version_number}/
+sudo rm -rf "/Applications/Python ${python_version_number}/"
+cd /usr/local/bin && ls -l | grep "/Library/Frameworks/Python.framework/Versions/${python_version_number}" | awk '{print $9}' | sudo xargs rm```
+
+### Step 1: Installing Brew
+
+brew is a command line based package manager for mac similar to apt on linux or winget on windows and it can install the right version of python for us
+
+(you can copy paste all commands below and run them at once no need to run them one by one, this command can take some time and it might ask you to install XCode tools as well, install them)
+
+```bash
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"```
+
+### Step 2: Installing python using brew
+
+```bash
+brew install python@3.12```
